@@ -1,0 +1,17 @@
+{
+  "name": "pepcoding-task",
+  "version": "1.0.0",
+  "description": "This package contains an event scheduler web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ridham Sheel",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}

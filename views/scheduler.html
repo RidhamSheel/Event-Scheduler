@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/9fbaa9b004.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+
+        <div class="hamburger-container">
+            <div class="hamburger-menu">
+
+            </div>
+        </div>
+
+        <div>ClassroomScheduler</div>
+
+        <div class="date-container">
+            <div id="left-btn"><i class="fa fa-angle-left"></i></div>
+            <div>
+                <div class='day'>Tuesday</div>
+                <div class='date'>June 22, 2021</div>
+            </div>
+            <div id="right-btn"><i class="fa fa-angle-right"></i></div>
+        </div>
+
+        <div class="format-dropdown-container">
+            <div id="current-format">Day</div>
+            <i class="fa fa-caret-down"></i>
+
+            <div class="format-dropdown">
+                <a href="/">Day</a>
+                <a href="/weekView">Week</a>
+                <a href="#">Month</a>
+            </div>
+        </div>
+    </div>
+
+    <div class = "hamburger-menu-display">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="space">
+        <div class="create-event-btn">
+            <div class="create-event"></div>
+        </div>
+    </div>
+    <div class="event-container">
+        <div class="grid">
+            <div>12:00AM</div>
+            <div class = "time-interval"></div>
+            <div>1:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>2:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>3:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>4:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>5:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>6:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>7:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>8:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>9:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>10:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>11:00 AM</div>
+            <div class = "time-interval"></div>
+            <div>12:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>1:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>2:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>3:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>4:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>5:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>6:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>7:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>8:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>9:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>10:00 PM</div>
+            <div class = "time-interval"></div>
+            <div>11:00 PM</div>
+            <div class = "time-interval"></div>
+        </div>
+
+    </div>
+
+    <div class="event-creator">
+        <div id= "close-window">
+            <div id="close-container"><div id="close"></div></div>
+        </div>
+        <div id= "event-manager">
+            <form action="/create" method="POST">
+                <input type="text" name="subject" id="subject" placeholder="Name of the subject">
+                <input type="text" name="teacher" id="teacher" placeholder="Teacher's Name">
+                <input type="text" name="batch" id="batch" placeholder="Batch">
+                <textarea name="description" id="desc" cols="26" rows="10" placeholder="Add Description"></textarea>
+                <button type="submit" id="#formbtn">Create Event</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="calendar">
+
+    </div>
+    <script src="/static/eventlistener.js"></script>
+</body>
+</html>
